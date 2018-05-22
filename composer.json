@@ -1,0 +1,43 @@
+{
+  "name": "armetiz/simple-ics",
+  "description": "A PHP 7.1+ library for generating simple ICS file.",
+  "type": "library",
+  "keywords": ["ics", "event"],
+  "homepage": "https://github.com/armetiz/simple-ics",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Tourlourat",
+      "email": "thomas@tourlourat.com",
+      "homepage": "http://tourlourat.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/armetiz/simple-ics/issues",
+    "source": "https://github.com/armetiz/simple-ics/"
+  },
+  "require": {
+    "php": "^7.1",
+    "beberlei/assert": "^2.9"
+  },
+  "autoload": {
+    "psr-4": {"Armetiz\\SimpleICS\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": {"Armetiz\\SimpleICS\\Test\\": "tests/"}
+  },
+  "replace": {
+    "armetiz/simple-ics": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit --verbose --colors=always",
+    "test": [
+      "@phpunit"
+    ]
+  }
+}
